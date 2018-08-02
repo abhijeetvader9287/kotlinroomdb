@@ -1,6 +1,6 @@
-package com.irontec.roomexample.database.entities
+package demo.kotlinroomdb.database.entities
 
-import android.arch.persistence.room.*
+import androidx.room.*
 
 /**
  * Created by axier on 7/2/18.
@@ -8,13 +8,13 @@ import android.arch.persistence.room.*
 
 @Entity(foreignKeys =
     [
-        ForeignKey(
+        (ForeignKey(
                 entity = Customer::class,
                 parentColumns = arrayOf("uid"),
                 childColumns = arrayOf("customer_id"),
                 onDelete = ForeignKey.CASCADE
-        )
-    ], indices = [Index(value = "customer_id")]
+        ))
+    ], indices = [(Index(value = "customer_id"))]
 )
 class Bill constructor(amount: Int, customerId: Int) {
 
