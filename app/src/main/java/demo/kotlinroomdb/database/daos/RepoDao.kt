@@ -1,4 +1,4 @@
-package demo.kotlinroomdb.daos
+package demo.kotlinroomdb.database.daos
 
 
 import androidx.room.*
