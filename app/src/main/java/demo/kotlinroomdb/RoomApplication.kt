@@ -1,4 +1,4 @@
-package demo.kotlinroomdb.activities
+package demo.kotlinroomdb
 
 import android.app.Application
 import demo.kotlinroomdb.database.AppDatabase
